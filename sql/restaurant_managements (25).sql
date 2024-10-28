@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2024 at 10:06 AM
+-- Generation Time: Oct 24, 2024 at 11:23 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,67 +40,99 @@ CREATE TABLE `activity_logs` (
 --
 
 INSERT INTO `activity_logs` (`log_id`, `action_by`, `action_type`, `action_details`, `created_at`) VALUES
-(1, 1, 'Logout', 'mcaringal logged out', '2024-10-09 11:24:26'),
-(2, 1, 'Login', 'mcaringal logged in', '2024-10-09 11:24:34'),
-(3, 1, 'Logout', 'mcaringal logged out', '2024-10-09 13:32:45'),
-(4, 1, 'Login', 'mcaringal logged in', '2024-10-09 13:32:58'),
-(5, 1, 'Login', 'mcaringal logged in', '2024-10-09 13:35:04'),
-(6, 3, 'Login', 'hdsaa logged in', '2024-10-09 22:38:59'),
-(7, 3, 'Login', 'hdsaa logged in', '2024-10-09 22:40:02'),
-(8, 3, 'Order Placed', 'Added a new product: da', '2024-10-10 01:33:13'),
-(9, 3, 'Add Product', 'Added a new product: dsf (Category: Dessert)', '2024-10-10 01:39:52'),
-(10, 3, 'Update Product', 'Updated product: pizza kingdf (Category: Meal)', '2024-10-10 01:43:40'),
-(11, 3, 'Delete Product', 'Deleted product: dsf', '2024-10-10 01:43:49'),
-(12, 3, 'Update Product', 'Updated product: Coke (Category: Drink)', '2024-10-10 02:05:06'),
-(13, 3, 'Update Product', 'Updated product: pizza kingdf (Category: Meal)', '2024-10-10 02:08:14'),
-(14, 3, 'Logout', 'hdsaa logged out', '2024-10-10 02:43:36'),
-(15, 3, 'Login', 'hdsaa logged in', '2024-10-10 02:43:39'),
-(16, 3, 'Login', 'hdsaa logged in', '2024-10-13 07:43:57'),
-(17, 3, 'Update Product', 'Updated product: pizza kingdf (Category: Meal)', '2024-10-13 07:47:43'),
-(18, 3, 'Add Product', 'Added a new product: vvvvvvvvb (Category: Drink)', '2024-10-13 09:35:21'),
-(19, 3, 'Login', 'hdsaa logged in', '2024-10-13 12:42:11'),
-(20, 3, 'Login', 'hdsaa logged in', '2024-10-13 12:42:11'),
-(21, 3, 'Login', 'hdsaa logged in', '2024-10-15 03:58:36'),
-(22, 3, 'Update Product', 'Updated product: pizza kingdf (Category: Meal)', '2024-10-15 04:28:41'),
-(23, 3, 'Login', 'hdsaa logged in', '2024-10-15 04:34:11'),
-(24, 3, 'Login', 'hdsaa logged in', '2024-10-15 04:42:38'),
-(25, 3, 'Login', 'hdsaa logged in', '2024-10-18 01:56:48'),
-(26, 3, 'Login', 'hdsaa logged in', '2024-10-19 00:20:39'),
-(27, 3, 'Login', 'hdsaa logged in', '2024-10-19 00:38:33'),
-(28, 3, 'Logout', 'hdsaa logged out', '2024-10-19 01:43:01'),
-(29, 3, 'Login', 'hdsaa logged in', '2024-10-19 01:43:08'),
-(30, 3, 'Logout', 'hdsaa logged out', '2024-10-19 03:48:03'),
-(31, 3, 'Login', 'hdsaa logged in', '2024-10-19 03:48:10'),
-(32, 4, 'Login', 'jlast2 logged in', '2024-10-19 09:45:26'),
-(33, 4, 'Login', 'jlast2 logged in', '2024-10-19 09:46:03'),
-(34, 4, 'Logout', 'jlast2 logged out', '2024-10-19 09:47:08'),
-(35, 4, 'Login', 'jlast2 logged in', '2024-10-19 09:55:47'),
-(36, 4, 'Login', 'jlast2 logged in', '2024-10-19 10:24:08'),
-(37, 4, 'Logout', 'jlast2 logged out', '2024-10-19 10:34:40'),
-(38, 4, 'Login', 'jlast2 logged in', '2024-10-19 11:02:34'),
-(39, 3, 'Login', 'hdsaa logged in', '2024-10-19 22:42:55'),
-(40, 3, 'Login', 'hdsaa logged in', '2024-10-20 01:05:21'),
-(41, 3, 'Delete Product', 'Deleted product: vvvvvvvvb', '2024-10-20 01:05:31'),
-(42, 3, 'Delete Product', 'Deleted product: da', '2024-10-20 01:05:34'),
-(43, 3, 'Delete Product', 'Deleted product: dsf', '2024-10-20 01:05:42'),
-(44, 3, 'Update Product', 'Updated product:  Black Coffee (Category: Meal)', '2024-10-20 01:08:39'),
-(45, 3, 'Update Product', 'Updated product:  Black Coffee (Category: Drink)', '2024-10-20 01:08:48'),
-(46, 3, 'Update Product', 'Updated product: Bacon Cheeseburger The &quot;BCB&quot; (M) (Category: Drink)', '2024-10-20 01:11:26'),
-(47, 3, 'Update Product', 'Updated product: Hungarian Sausage  (60g) (Category: Add-on)', '2024-10-20 01:13:43'),
-(48, 3, 'Update Product', 'Updated product: Bacon Cheeseburger The BCB (M) (Category: Drink)', '2024-10-20 01:27:00'),
-(49, 3, 'Update Product', 'Updated product: Bacon Cheeseburger The BCB (M) (Category: Meal)', '2024-10-20 01:27:25'),
-(50, 3, 'Logout', 'hdsaa logged out', '2024-10-20 01:32:24'),
-(51, 3, 'Login', 'hdsaa logged in', '2024-10-20 02:37:26'),
-(52, 3, '', 'Updated table ID: 1', '2024-10-20 05:27:32'),
-(53, 3, '', 'Updated table ID: 1', '2024-10-20 05:27:38'),
-(54, 3, '', 'Updated table ID: 1', '2024-10-20 05:28:05'),
-(55, 3, '', 'Updated table ID: 1', '2024-10-20 05:28:08'),
-(56, 3, '', 'Updated table ID: 1', '2024-10-20 05:28:21'),
-(57, 3, '', 'Updated table ID: 1', '2024-10-20 05:28:27'),
-(58, 3, 'Add Product', 'Added a new product: Pizzasdf (Category: Drink)', '2024-10-20 07:36:40'),
-(59, 3, 'Logout', 'hdsaa logged out', '2024-10-20 07:47:33'),
-(60, 3, 'Login', 'hdsaa logged in', '2024-10-20 07:47:59'),
-(61, 3, 'Update Product', 'Updated product:  Black Coffee (Category: Drink)', '2024-10-20 07:54:06');
+(72, 3, 'Add Product', 'Added a new product: Pizzasd (Category: Meal)', '2024-10-20 14:21:28'),
+(73, 3, 'Delete Product', 'Deleted product: Pizzasd', '2024-10-20 14:21:50'),
+(74, 3, 'Login', 'Mjason logged in', '2024-10-20 22:31:50'),
+(75, 3, 'Logout', 'Mjason logged out', '2024-10-20 22:32:48'),
+(76, 3, 'Login', 'Mjason logged in', '2024-10-20 22:37:17'),
+(77, 3, 'Logout', 'Mjason logged out', '2024-10-20 22:37:20'),
+(78, 3, 'Login', 'Mjason logged in', '2024-10-20 22:39:16'),
+(79, 3, 'Logout', 'Mjason logged out', '2024-10-20 22:39:19'),
+(80, 3, 'Login', 'Mjason logged in', '2024-10-20 22:49:39'),
+(81, 3, 'Logout', 'Mjason logged out', '2024-10-20 22:53:23'),
+(82, 3, 'Login', 'Mjason logged in', '2024-10-21 02:07:23'),
+(83, 3, 'Logout', 'Mjason logged out', '2024-10-21 02:18:08'),
+(84, 3, 'Login', 'Mjason logged in', '2024-10-21 03:00:19'),
+(85, 3, 'Logout', 'Mjason logged out', '2024-10-21 03:10:06'),
+(86, 10, 'Login', 'jcaringal logged in', '2024-10-21 03:32:51'),
+(87, 3, 'Login', 'Mjason logged in', '2024-10-21 03:33:27'),
+(88, 3, '', 'Updated table ID: 30', '2024-10-21 08:10:20'),
+(89, 3, '', 'Updated table ID: 30', '2024-10-21 08:10:26'),
+(90, 3, '', 'Updated table ID: 1', '2024-10-21 08:14:23'),
+(91, 3, '', 'Updated table ID: 1', '2024-10-21 08:14:33'),
+(92, 3, '', 'Updated table ID: 1', '2024-10-21 08:14:51'),
+(93, 3, '', 'Updated table ID: 1', '2024-10-21 08:14:54'),
+(94, 3, '', 'Updated table ID: 1', '2024-10-21 08:15:01'),
+(95, 3, '', 'Updated table ID: 1', '2024-10-21 08:15:09'),
+(96, 3, '', 'Updated table ID: 1', '2024-10-21 08:17:12'),
+(97, 3, '', 'Updated table ID: 1', '2024-10-21 08:17:16'),
+(98, 3, '', 'Updated table ID: 1', '2024-10-21 08:19:56'),
+(99, 3, '', 'Updated table ID: 1', '2024-10-21 08:20:08'),
+(100, 3, '', 'Updated table ID: 1', '2024-10-21 08:20:28'),
+(101, 3, '', 'Updated table ID: 1', '2024-10-21 08:21:01'),
+(102, 3, '', 'Updated table ID: 1', '2024-10-21 08:21:34'),
+(103, 3, '', 'Updated table ID: 1', '2024-10-21 08:23:10'),
+(104, 3, '', 'Updated table ID: 1', '2024-10-21 08:26:37'),
+(105, 3, '', 'Updated table ID: 1', '2024-10-21 08:26:45'),
+(106, 3, '', 'Updated table ID: 1', '2024-10-21 08:29:51'),
+(107, 3, '', 'Updated table ID: 1', '2024-10-21 08:30:01'),
+(108, 3, '', 'Updated table ID: 1', '2024-10-21 08:30:27'),
+(109, 3, '', 'Updated table ID: 1', '2024-10-21 08:30:58'),
+(110, 3, '', 'Updated table ID: 1', '2024-10-21 08:35:32'),
+(111, 3, '', 'Updated table ID: 1', '2024-10-21 08:35:51'),
+(112, 3, '', 'Updated table ID: 1', '2024-10-21 08:38:56'),
+(113, 3, '', 'Updated table ID: 1', '2024-10-21 08:39:27'),
+(114, 3, '', 'Updated table ID: 1', '2024-10-21 08:42:04'),
+(115, 3, '', 'Updated table ID: 1', '2024-10-21 08:43:41'),
+(116, 3, '', 'Updated table ID: 1', '2024-10-21 08:44:03'),
+(117, 3, '', 'Updated table ID: 1', '2024-10-21 08:48:34'),
+(118, 3, '', 'Updated table ID: 1', '2024-10-21 08:52:26'),
+(119, 3, '', 'Updated table ID: 1', '2024-10-21 08:56:08'),
+(120, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:34'),
+(121, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:36'),
+(122, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:36'),
+(123, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:44'),
+(124, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:44'),
+(125, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:44'),
+(126, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:44'),
+(127, 3, '', 'Updated table ID: 1', '2024-10-21 08:58:54'),
+(128, 3, '', 'Updated table ID: 1', '2024-10-21 08:59:05'),
+(129, 3, '', 'Updated table ID: 1', '2024-10-21 08:59:06'),
+(130, 3, '', 'Updated table ID: 1', '2024-10-21 08:59:06'),
+(131, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:04:36'),
+(132, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:04:45'),
+(133, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:07:06'),
+(134, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:08:04'),
+(135, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:16:57'),
+(136, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:17:09'),
+(137, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-21 09:23:53'),
+(138, NULL, '', 'Deleted table number: 8', '2024-10-21 12:28:39'),
+(139, NULL, '', 'Deleted table number: 6', '2024-10-21 12:31:33'),
+(140, NULL, '', 'Deleted table number: 4', '2024-10-21 12:31:41'),
+(141, NULL, 'Add Product', 'Added a new product: Pizzasd (Category: Meal)', '2024-10-21 12:32:21'),
+(142, NULL, 'Delete Product', 'Deleted product: Pizzasd', '2024-10-21 12:32:25'),
+(143, NULL, 'Add Product', 'Added a new product: Pizzasd (Category: Dessert)', '2024-10-21 12:35:46'),
+(144, NULL, 'Delete Product', 'Deleted product: Pizzasd', '2024-10-21 12:35:51'),
+(145, NULL, 'Add Product', 'Added a new product: Pizzasd (Category: Dessert)', '2024-10-21 12:38:19'),
+(146, NULL, 'Delete Product', 'Deleted product: Pizzasd', '2024-10-21 12:38:26'),
+(147, NULL, 'Add Product', 'Added a new product: Pizzasd (Category: Meal)', '2024-10-21 12:40:17'),
+(148, NULL, 'Delete Product', 'Deleted product: Pizzasd', '2024-10-21 12:40:21'),
+(149, NULL, 'Add Product', 'Added a new product: Pizzasd (Category: Meal)', '2024-10-21 12:42:09'),
+(150, NULL, 'Delete Product', 'Deleted product: Pizzasd', '2024-10-21 12:42:51'),
+(151, 3, 'Login', 'Mjason logged in', '2024-10-22 08:38:10'),
+(152, 3, 'Add Product', 'Added a new product: Pizzasdf (Category ID: 5)', '2024-10-22 12:06:52'),
+(153, 3, 'Delete Product', 'Deleted product: Pizzasdf', '2024-10-22 12:08:59'),
+(154, 3, 'Logout', 'Mjason logged out', '2024-10-22 13:07:07'),
+(155, 3, 'Login', 'Mjason logged in', '2024-10-22 13:07:13'),
+(156, 3, 'Login', 'Mjason logged in', '2024-10-23 03:16:48'),
+(157, 3, 'Logout', 'Mjason logged out', '2024-10-23 03:23:27'),
+(158, 3, 'Login', 'Mjason logged in', '2024-10-23 03:29:17'),
+(159, 3, 'Login', 'Mjason logged in', '2024-10-23 03:32:25'),
+(160, 3, 'Update Product', 'Updated product: Black Coffee (Category ID: 2)', '2024-10-23 03:45:42'),
+(161, 3, 'Add Product', 'Added a new product: Pizzasd (Category ID: 3)', '2024-10-23 03:46:05'),
+(162, 3, 'Update Product', 'Updated product: Pizzasd (Category ID: 31)', '2024-10-23 03:46:17'),
+(163, 3, '', 'Updated table ID: 1 with table number: 9', '2024-10-23 03:47:12'),
+(164, 3, '', 'Updated table ID: 2 with table number: 2', '2024-10-23 03:47:43');
 
 -- --------------------------------------------------------
 
@@ -193,18 +225,14 @@ CREATE TABLE `order_items` (
 INSERT INTO `order_items` (`order_item_id`, `order_id`, `product_id`, `quantity`, `price`) VALUES
 (1, 1, 1, 1, 60.00),
 (2, 1, 2, 1, 249.00),
-(3, 1, 3, 1, 50.00),
 (4, 2, 1, 1, 60.00),
 (5, 2, 2, 1, 249.00),
-(6, 2, 3, 1, 50.00),
 (7, 3, 1, 2, 60.00),
 (8, 3, 2, 3, 249.00),
 (9, 1, 1, 1, 60.00),
 (10, 1, 2, 1, 249.00),
-(11, 1, 3, 1, 50.00),
 (12, 2, 1, 1, 60.00),
-(13, 2, 2, 1, 249.00),
-(14, 2, 3, 1, 50.00);
+(13, 2, 2, 1, 249.00);
 
 -- --------------------------------------------------------
 
@@ -217,6 +245,17 @@ CREATE TABLE `product_categories` (
   `category_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `product_categories`
+--
+
+INSERT INTO `product_categories` (`category_id`, `category_name`) VALUES
+(1, 'Drink'),
+(2, 'Meal'),
+(3, 'Dessert'),
+(4, 'pizza1'),
+(5, 'pizza');
+
 -- --------------------------------------------------------
 
 --
@@ -226,40 +265,22 @@ CREATE TABLE `product_categories` (
 CREATE TABLE `product_items` (
   `product_id` int(11) NOT NULL,
   `product_name` varchar(255) DEFAULT NULL,
-  `category` enum('Drink','Meal','Dessert','Add-on') NOT NULL,
   `price` decimal(10,2) DEFAULT NULL,
   `special_instructions` text DEFAULT NULL,
   `product_image` varchar(500) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `quantity` int(11) NOT NULL,
-  `category_id` int(11) DEFAULT NULL
+  `category_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `product_items`
 --
 
-INSERT INTO `product_items` (`product_id`, `product_name`, `category`, `price`, `special_instructions`, `product_image`, `created_at`, `updated_at`, `quantity`, `category_id`) VALUES
-(1, ' Black Coffee', 'Drink', 60.00, 'Coffee brewed in a large batch using hot water and ground KAPENG BARAKO beans.\r\n', '../Uploads/671458170c418_images.jpg', '2024-10-07 18:35:00', '2024-10-20 07:54:06', 20, NULL),
-(2, 'Bacon Cheeseburger The BCB (M)', 'Meal', 249.00, 'House marinara, mozzarella cheese, special cheese sauce, bell pepper, onions, ground beef, and bacon.', '../Uploads/671458be593cc_images (1).jpg', '2024-10-07 18:35:00', '2024-10-20 01:27:25', 20, NULL),
-(3, 'Hungarian Sausage  (60g)', 'Add-on', 50.00, '', '../Uploads/67145947c35ea_GyulaiSausage.jpg', '2024-10-07 18:35:00', '2024-10-20 01:13:43', 150, NULL),
-(4, 'Pizzasdf', 'Drink', 0.04, 'details', '../Uploads/6714b3089144f_images.jpg', '2024-10-20 07:36:40', '2024-10-20 07:36:40', 2, NULL);
-
---
--- Triggers `product_items`
---
-DELIMITER $$
-CREATE TRIGGER `update_order_items_price` AFTER UPDATE ON `product_items` FOR EACH ROW BEGIN
-    -- Only update if the price has actually changed
-    IF NEW.price <> OLD.price THEN
-        UPDATE order_items
-        SET price = NEW.price
-        WHERE product_id = NEW.product_id;
-    END IF;
-END
-$$
-DELIMITER ;
+INSERT INTO `product_items` (`product_id`, `product_name`, `price`, `special_instructions`, `product_image`, `created_at`, `updated_at`, `quantity`, `category_id`) VALUES
+(1, 'Black Coffee', 60.00, 'Coffee brewed in a large batch using hot water and ground KAPENG BARAKO beans.', '../Uploads/671458170c418_images.jpg', '2024-10-07 10:35:00', '2024-10-23 03:45:42', 20, 2),
+(2, 'Bacon Cheeseburger The BCB (M)', 249.00, 'House marinara, mozzarella cheese, special cheese sauce, bell pepper, onions, ground beef, and bacon.', '../Uploads/671458be593cc_images (1).jpg', '2024-10-07 10:35:00', '2024-10-19 17:27:25', 20, 2);
 
 -- --------------------------------------------------------
 
@@ -285,7 +306,7 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`reservation_id`, `user_id`, `table_id`, `reservation_date`, `reservation_time`, `status`, `custom_note`, `feedback`, `created_at`, `updated_at`) VALUES
-(2, 2, 1, '2024-10-10', '19:00:00', 'Rescheduled', 'Please prepare the table for a birthday.', 'Looking forward to a good meal.', '2024-10-09 08:13:16', '2024-10-19 10:30:03');
+(2, 2, 1, '2024-10-10', '19:00:00', 'Confirmed', 'Please prepare the table for a birthday.', 'Looking forward to a good meal.', '2024-10-09 08:13:16', '2024-10-23 03:16:56');
 
 -- --------------------------------------------------------
 
@@ -342,18 +363,11 @@ CREATE TABLE `tables` (
 --
 
 INSERT INTO `tables` (`table_id`, `table_number`, `seating_capacity`, `is_available`, `area`) VALUES
-(1, 8, 4, 1, 'Outdoor'),
+(1, 9, 4, 1, 'Outdoor'),
 (2, 2, 6, 1, 'Outdoor'),
 (3, 3, 2, 1, 'Indoor'),
-(4, 6, 4, 1, 'Outdoor'),
-(5, 12, 12, 1, 'Outdoor'),
-(6, 31, 1, 1, 'Outdoor'),
-(11, 2, 2, 1, 'Indoor'),
-(12, 3, 2, 1, 'Outdoor'),
-(13, 231, 123, 1, 'Outdoor'),
-(14, 32, 11, 1, 'Indoor'),
-(15, 123, 3, 1, 'Indoor'),
-(16, 3, 3, 1, 'Indoor');
+(27, 1, 2, 1, 'Outdoor'),
+(28, 3, 1, 1, 'Outdoor');
 
 -- --------------------------------------------------------
 
@@ -374,18 +388,10 @@ CREATE TABLE `table_images` (
 --
 
 INSERT INTO `table_images` (`image_id`, `table_id`, `image_path`, `uploaded_at`, `position`) VALUES
-(1, 1, '671494f56ecf7_370249953_1774860426363616_6080510073952012735_n.png', '2024-10-18 19:00:41', 'back view'),
-(2, 1, '/uploads/table1_image2.jpg', '2024-10-18 19:00:41', 'back view'),
-(3, 2, '/uploads/table2_image1.jpg', '2024-10-18 19:00:41', 'back view'),
-(4, 4, '../uploads/6713336b6f52e_2022-01-13_205111.jpg', '2024-10-18 20:19:55', 'back view'),
-(5, 5, '../uploads/671333988813d_429313029_742582880936669_5473808888799433966_n.jpg', '2024-10-18 20:20:40', 'back view'),
-(6, 5, '../uploads/67133398893f9_store.png', '2024-10-18 20:20:40', 'back view'),
-(7, 6, '../uploads/671333f016306_Caringal, Mark Laurence L...png', '2024-10-18 20:22:08', 'back view'),
-(8, 6, '../uploads/671333f016d42_Untitled.png', '2024-10-18 20:22:08', 'back view'),
-(9, 13, '../uploads/671389cbbd30f_Caringal, Mark Laurence L._BSIT 2103..jpg', '2024-10-19 02:28:27', 'back view'),
-(10, 14, '../uploads/671389fa019e3_429313029_742582880936669_5473808888799433966_n.jpg', '2024-10-19 02:29:14', 'back view'),
-(11, 15, '../uploads/6713b9528b2ef_page1.png', '2024-10-19 05:51:14', 'back view'),
-(12, 15, '../uploads/6713b9528c43d_Caringal, Mark Laurence L...png', '2024-10-19 05:51:14', 'back view');
+(1, 1, '../uploads/67161da98506b_images (2).jpg', '2024-10-18 11:00:41', 'back view'),
+(2, 1, '../uploads/671871c0da28a_images (2).jpg', '2024-10-18 11:00:41', 'front view'),
+(3, 2, '../uploads/671871dfb1037_images (2).jpg', '2024-10-18 11:00:41', 'back view'),
+(33, 1, '../uploads/6716192d7c308_image.jpg', '2024-10-21 08:43:41', 'left view');
 
 -- --------------------------------------------------------
 
@@ -418,9 +424,12 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `first_name`, `middle_initial`, `last_name`, `suffix`, `contact_number`, `email`, `address`, `zip_code`, `username`, `password_hash`, `role`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Mark Laurence', 'l', 'caringal', 'wq', '12345678901', 'ha1@gmail.com', 'place', '1234', 'mcaringal', '$2y$10$rXv6Cf2lAyz8v6iW.VI0Yeg06J013.ee2YQH/UiHr6s1.A6IeLPJq', 'General User', '2024-10-08 14:42:51', '2024-10-10 02:55:27', NULL),
 (2, 'Mark Laurence1', 'l', 'caringal1', 'wq', '12345678901', 'ha2@gmail.com', 'place', '1234', 'mcaringal1', '$2y$10$QGqVj62jsTWdoBykgGQ7Oud.BcYJb.H2sWyB0.OgAqMTYKVwA4k5S', 'General User', '2024-10-08 14:47:12', '2024-10-08 14:47:12', NULL),
-(3, 'hala', 's', 'dsaa', 'sad', '23123', 'g@gmail.com', 'asd', '123', 'hdsaa', '$2y$10$X1qAS79RP2D.8qTITLYK5.TkspivdGWsQNltEoFzB0j9daprPGIXG', 'Admin', '2024-10-09 22:38:48', '2024-10-09 22:39:45', NULL),
+(3, 'Mark ', 's', 'jason', 'sad', '23123', 'mk@gmail.com', 'asd', '123', 'Mjason', '$2y$10$X1qAS79RP2D.8qTITLYK5.TkspivdGWsQNltEoFzB0j9daprPGIXG', 'Admin', '2024-10-09 22:38:48', '2024-10-20 14:19:54', NULL),
 (4, 'Jhon Carl', 'l', 'last2', '', '12345678908', 'as22@gmail.com', 'place', '45345', 'jlast2', '$2y$10$xc3ncPQ6b73XHDhGRhUhJOtG3VpdieA9wxWJWjKI4QOlZ53XI9oHi', 'Admin', '2024-10-19 09:44:43', '2024-10-19 09:45:53', NULL),
-(5, 'Mark james', 'l', 'last3', '', '12345678908', 'haha1@gmail.com', 'place', '45345', 'mlast3', '$2y$10$mMacmmxWCYvFDcnJWrRh.Oka5uaIcGGWaDIQBdcf9hMbJw.QjYIWW', 'General User', '2024-10-19 11:04:08', '2024-10-19 11:04:08', NULL);
+(5, 'Mark james', 'l', 'last3', '', '12345678908', 'haha1@gmail.com', 'place', '45345', 'mlast3', '$2y$10$mMacmmxWCYvFDcnJWrRh.Oka5uaIcGGWaDIQBdcf9hMbJw.QjYIWW', 'General User', '2024-10-19 11:04:08', '2024-10-19 11:04:08', NULL),
+(6, 'Jack', 'N', 'Jill', '', '12345678901', 'Jack@gmail.com', 'place', '1234', 'jjill', '$2y$10$3bQxRoIXBSv5SUm05bH3luhvlCzHzAkvwtkk/i7BBWh5jeVeKO/3C', 'General User', '2024-10-20 22:57:10', '2024-10-20 22:57:10', NULL),
+(9, 'Jack', 'N', 'Jill', 'jr', '12345678901', 'ha@gmail.com', 'place', '1234', 'jjill2', '$2y$10$WCeduJTp2/rnAYOb6fxiZuTB0zbO25tbUpUWXKe4uKoRYHQWIvrBO', 'General User', '2024-10-20 23:05:58', '2024-10-20 23:05:58', NULL),
+(10, 'Jack ja', 'l', 'caringal', '', '12345678901', 'ha22@gmail.com', 'place', '1234', 'jcaringal', '$2y$10$s6yPImq4oGkVTK5M0mn6ru2BwvADYTkNAiX7FlsV0IycOYmfdsmb.', 'General User', '2024-10-21 03:31:27', '2024-10-21 03:31:27', NULL);
 
 --
 -- Indexes for dumped tables
@@ -480,7 +489,7 @@ ALTER TABLE `product_categories`
 --
 ALTER TABLE `product_items`
   ADD PRIMARY KEY (`product_id`),
-  ADD KEY `product_items_ibfk_3` (`category_id`);
+  ADD KEY `fk_category` (`category_id`);
 
 --
 -- Indexes for table `reservations`
@@ -534,7 +543,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activity_logs`
 --
 ALTER TABLE `activity_logs`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
 
 --
 -- AUTO_INCREMENT for table `error_logs`
@@ -570,13 +579,13 @@ ALTER TABLE `order_items`
 -- AUTO_INCREMENT for table `product_categories`
 --
 ALTER TABLE `product_categories`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `product_items`
 --
 ALTER TABLE `product_items`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `reservations`
@@ -600,19 +609,19 @@ ALTER TABLE `sessions`
 -- AUTO_INCREMENT for table `tables`
 --
 ALTER TABLE `tables`
-  MODIFY `table_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `table_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `table_images`
 --
 ALTER TABLE `table_images`
-  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
@@ -649,7 +658,7 @@ ALTER TABLE `order_items`
 -- Constraints for table `product_items`
 --
 ALTER TABLE `product_items`
-  ADD CONSTRAINT `product_items_ibfk_3` FOREIGN KEY (`category_id`) REFERENCES `product_categories` (`category_id`);
+  ADD CONSTRAINT `fk_category` FOREIGN KEY (`category_id`) REFERENCES `product_categories` (`category_id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `reservations`
