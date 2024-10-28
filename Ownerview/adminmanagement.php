@@ -83,6 +83,15 @@
                           <label for="username">Username:</label>
                           <input type="text" class="form-control" id="username" name="username" required>
                       </div>
+                      
+                      <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div> <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      
                       <div class="form-group">
                           <label for="password">Password:</label>
                           <input type="password" class="form-control" id="password" name="password" required>
@@ -99,10 +108,7 @@
                           <input type="text" class="form-control" id="contact_number" name="contact_number" required
                                  pattern="09[0-9]{9}" title="Contact number must start with 09 and have exactly 11 digits.">
                       </div>
-                      <div class="form-group">
-                          <label for="email">Email:</label>
-                          <input type="email" class="form-control" id="email" name="email" required>
-                      </div>
+                     
                       <button type="submit" class="btn btn-secondary" style="height:40px">Add Admin/Staff</button>
                   </form>
               </div>

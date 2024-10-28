@@ -56,10 +56,13 @@
                         <input type="text" name="suffix" placeholder="Suffix (Optional)" value="<?= htmlspecialchars($suffix ?? ''); ?>">
                     </div>
                     <input type="text" name="lastName" placeholder="Last Name" required value="<?= htmlspecialchars($lastName ?? ''); ?>">
-                    <input type="text" name="address" placeholder="Address" required value="<?= htmlspecialchars($address ?? ''); ?>">
-                    <input type="tel" name="phone" placeholder="Phone Number" required value="<?= htmlspecialchars($phone ?? ''); ?>">
-                    <input type="text" name="zipCode" placeholder="Zip Code" required value="<?= htmlspecialchars($zipCode ?? ''); ?>">
-                    
+                    <input type="text" name="address" placeholder="Address" required value="<?= htmlspecialchars($address ?? ''); ?>" >
+                    <input type="tel" name="phone" placeholder="Phone Number" required value="<?= htmlspecialchars($phone ?? ''); ?>" required
+                    pattern="09[0-9]{9}" title="Contact number must start with 09 and have exactly 11 digits. ">
+                   
+
+                    <input type="text" name="zipCode" placeholder="Zip Code" required value="<?= htmlspecialchars($zipCode ?? ''); ?>" pattern="\d{4}" title="Zip code number must be 4 digits" maxlength="4" minlength="4" 
+    />
                     <button type="submit">Sign Up</button>
                 </form>
             </div>

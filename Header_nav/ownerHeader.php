@@ -31,9 +31,5 @@ include_once "assets/config.php";
 
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
     
-    <div class="user-cart">
-        <a href="<?php echo isset($_SESSION['user_id']) ? 'user_profile.php' : './assets/log-out.php'; ?>" style="text-decoration:none;">
-            <i class="<?php echo isset($_SESSION['user_id']) ? 'fa fa-user' : 'fa fa-sign-in'; ?> mr-5" style="font-size:30px; color:#fff;" aria-hidden="true"></i>
-        </a>
-    </div>
+
 </nav>
