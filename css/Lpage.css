@@ -126,10 +126,14 @@
     border-radius: 10px;
 }
 
-/* Footer Styling */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly around items */
+    color: #ADADAD;
+    align-items: center; /* Vertically centers the items */
+    padding: 1rem; /* Optional padding for visual appeal */
+}
+
+.icon{
+    font-size: 2rem;
 }

@@ -16,7 +16,12 @@
 
     <div id="main-content" class="container allContent-section py-4 center-content">
     <h1 class="text-center">Delicious starts here!</h1>
-
+    <div class="table_nav">
+                            <button class="table-nav">Reservation</button>
+                            <button class="table-nav">No of Guest</button>
+                            <button class="table-nav">Date</button>
+                            <button class="table-nav">Time</button>
+                        </div>
     <!-- Slider Section -->
     <div class="slider-container">
         <button class="arrow-btn" id="prev-btn"><i class="fa fa-arrow-circle-left arrow" aria-hidden="true"></i></button>
@@ -40,7 +45,9 @@
                 <!-- Table Slide -->
                 <div class="slide-content-box">
                     <div class="slide-button">
+                    
                         <div class="title">Table</div>
+                    
                         <button class="select"> 
                             <div class="image-box">
                             <i class="fa fa-calendar-check-o big" aria-hidden="true"></i>

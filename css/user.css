@@ -1,3 +1,11 @@
+/* Overall Styling */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
 /* Slider Styles */
 .slider-container {
   display: flex;
@@ -55,7 +63,6 @@
   align-items: center;
   width: 250px;
   height: 250px;
-  background-color: grey;
   margin: 0 auto;
   border-radius: 20%; /* Optional: Add rounded corners */
 }
@@ -127,4 +134,20 @@
 
 .arrow{
   font-size: 5rem;
+}
+
+/*table nav*/
+
+/* Ensure buttons align horizontally */
+.table_nav {
+  display: none;
+  justify-content: space-around;
+}
+.table-nav {
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 15rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
 }
