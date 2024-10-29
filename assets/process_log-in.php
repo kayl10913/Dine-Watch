@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $log_stmt->close(); // Close the statement
 
                 // Redirect to General User dashboard
-                header('Location: user_dashboard.php');
+                header('Location: User-Panel.php');
                 exit();
             } else {
                 $error = "Invalid password. Please try again.";

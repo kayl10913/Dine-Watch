@@ -3,30 +3,29 @@
 
   <!-- Add Item Button at the Top -->
   <div class="d-flex justify-content-between mb-3">
-  <?php
-include_once "../assets/config.php";
-
-// Fetch all categories from the database
-$category_sql = "SELECT * FROM product_categories";
-$category_result = $conn->query($category_sql);
-?>
-
-<!-- Item Type Filter -->
-<div>
-  <label for="filter_item_type">Filter by Item Type: </label>
-  <select id="filter_item_type" class="form-control" style="width: 200px; display: inline-block;" onchange="filterItems()">
-    <option value="All">All</option>
     <?php
-    // Dynamically generate option elements from the product_categories table
-    if ($category_result->num_rows > 0) {
-        while ($category_row = $category_result->fetch_assoc()) {
-            echo '<option value="' . htmlspecialchars($category_row['category_name']) . '">' . htmlspecialchars($category_row['category_name']) . '</option>';
-        }
-    }
-    ?>
-  </select>
-</div>
+    include_once "../assets/config.php";
 
+    // Fetch all categories in descending alphabetical order
+    $category_sql = "SELECT * FROM product_categories ORDER BY category_name DESC";
+    $category_result = $conn->query($category_sql);
+    ?>
+
+    <!-- Item Type Filter -->
+    <div>
+      <label for="filter_item_type">Filter by Item Type: </label>
+      <select id="filter_item_type" class="form-control" style="width: 200px; display: inline-block;" onchange="filterItems()">
+        <option value="All">All</option>
+        <?php
+        // Generate option elements sorted in descending alphabetical order by category name
+        if ($category_result->num_rows > 0) {
+            while ($category_row = $category_result->fetch_assoc()) {
+                echo '<option value="' . htmlspecialchars($category_row['category_name']) . '">' . htmlspecialchars($category_row['category_name']) . '</option>';
+            }
+        }
+        ?>
+      </select>
+    </div>
 
     <!-- Add Item Button -->
     <button type="button" class="btn btn-secondary" style="height:40px" data-toggle="modal" data-target="#myModal">
@@ -50,49 +49,49 @@ $category_result = $conn->query($category_sql);
         </tr>
       </thead>
       <tbody id="product_table_body">
-  <?php
-  include_once "../assets/config.php";
+        <?php
+        include_once "../assets/config.php";
 
-  // Fetch all product items with their category names
-  $sql = "SELECT product_items.*, product_categories.category_name 
-          FROM product_items 
-          INNER JOIN product_categories ON product_items.category_id = product_categories.category_id";
-  $result = $conn->query($sql);
-  $count = 1;
+        // Fetch all product items with their category names in descending order
+        $sql = "SELECT product_items.*, product_categories.category_name 
+                FROM product_items 
+                INNER JOIN product_categories ON product_items.category_id = product_categories.category_id
+                ORDER BY product_categories.category_name DESC";
+        $result = $conn->query($sql);
+        $count = 1;
 
-  if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-  ?>
-  <tr class="product-row" data-item-type="<?= htmlspecialchars($row["category_name"]) ?>">
-    <td class="text-center"><?= $count ?></td>
-    <td class="text-center">
-      <?php if ($row["product_image"]): ?>
-        <img src="<?= htmlspecialchars($row["product_image"]) ?>" alt="<?= htmlspecialchars($row["product_name"]) ?>" style="width: 50px; height: 50px;">
-      <?php else: ?>
-        No Image
-      <?php endif; ?>
-    </td>
-    <td><?= htmlspecialchars($row["product_name"]) ?></td>
-    <td><?= htmlspecialchars($row["category_name"]) ?></td>
-    <td><?= htmlspecialchars($row["quantity"]) ?></td>
-    <td><?= htmlspecialchars($row["price"]) ?></td>
-    <td><?= htmlspecialchars($row["special_instructions"]) ?></td>
-    <td class="text-center">
-      <button class="btn btn-primary" style="height:40px" onclick="itemEditForm('<?= $row['product_id'] ?>')">Edit</button>
-    </td>
-    <td class="text-center">
-      <button class="btn btn-danger" style="height:40px" onclick="itemDelete('<?= $row['product_id'] ?>')">Delete</button>
-    </td>
-  </tr>
-  <?php
-      $count++;
-    }
-  } else {
-    echo "<tr><td colspan='9' class='text-center'>No items found</td></tr>";
-  }
-  ?>
-</tbody>
-
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+        ?>
+        <tr class="product-row" data-item-type="<?= htmlspecialchars($row["category_name"]) ?>">
+          <td class="text-center"><?= $count ?></td>
+          <td class="text-center">
+            <?php if ($row["product_image"]): ?>
+              <img src="<?= htmlspecialchars($row["product_image"]) ?>" alt="<?= htmlspecialchars($row["product_name"]) ?>" style="width: 50px; height: 50px;">
+            <?php else: ?>
+              No Image
+            <?php endif; ?>
+          </td>
+          <td><?= htmlspecialchars($row["product_name"]) ?></td>
+          <td><?= htmlspecialchars($row["category_name"]) ?></td>
+          <td><?= htmlspecialchars($row["quantity"]) ?></td>
+          <td><?= htmlspecialchars($row["price"]) ?></td>
+          <td><?= htmlspecialchars($row["special_instructions"]) ?></td>
+          <td class="text-center">
+            <button class="btn btn-primary" style="height:40px" onclick="itemEditForm('<?= $row['product_id'] ?>')">Edit</button>
+          </td>
+          <td class="text-center">
+            <button class="btn btn-danger" style="height:40px" onclick="itemDelete('<?= $row['product_id'] ?>')">Delete</button>
+          </td>
+        </tr>
+        <?php
+                $count++;
+            }
+        } else {
+            echo "<tr><td colspan='9' class='text-center'>No items found</td></tr>";
+        }
+        ?>
+      </tbody>
     </table>
   </div>
 
@@ -111,26 +110,26 @@ $category_result = $conn->query($category_sql);
               <input type="text" class="form-control" id="item_name" name="item_name" required>
             </div>
             <?php
-include_once "../assets/config.php";
+            include_once "../assets/config.php";
 
-// Fetch all categories from the database
-$category_sql = "SELECT * FROM product_categories";
-$category_result = $conn->query($category_sql);
-?>
+            // Fetch all categories in descending alphabetical order
+            $category_sql = "SELECT * FROM product_categories ORDER BY category_name DESC";
+            $category_result = $conn->query($category_sql);
+            ?>
 
-<div class="form-group">
-  <label for="item_type">Item Type:</label>
-  <select id="item_type" name="item_type" class="form-control" required>
-    <?php
-    // Dynamically generate option elements from the product_categories table
-    if ($category_result->num_rows > 0) {
-        while ($category_row = $category_result->fetch_assoc()) {
-            echo '<option value="' . htmlspecialchars($category_row['category_name']) . '">' . htmlspecialchars($category_row['category_name']) . '</option>';
-        }
-    }
-    ?>
-  </select>
-</div>
+            <div class="form-group">
+              <label for="item_type">Item Type:</label>
+              <select id="item_type" name="item_type" class="form-control" required>
+                <?php
+                // Generate category options in descending alphabetical order
+                if ($category_result->num_rows > 0) {
+                    while ($category_row = $category_result->fetch_assoc()) {
+                        echo '<option value="' . htmlspecialchars($category_row['category_name']) . '">' . htmlspecialchars($category_row['category_name']) . '</option>';
+                    }
+                }
+                ?>
+              </select>
+            </div>
 
             <div class="form-group">
               <label for="stock">Stock:</label>
@@ -160,5 +159,3 @@ $category_result = $conn->query($category_sql);
     </div>
   </div>
 </div>
-
-

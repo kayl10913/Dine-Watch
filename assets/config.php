@@ -3,7 +3,7 @@
 
 // Database configuration settings
 $host = 'localhost';  // Database host
-$dbname = 'restaurant_managements'; // Database name
+$dbname = 'dine-watch'; // Database name
 $username = 'root';   // Database username (change if needed)
 $password = '';       // Database password (change if needed)
 
