@@ -6,7 +6,28 @@
   padding: 0;
   font-family: 'Roboto Mono', monospace;
 }
-   
+
+html, body {
+  height: 100%; /* Full height */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+}
+
+#main-content {
+  flex: 1; /* Allow main content to grow */
+  padding: 20px; /* Optional padding */
+}
+
+header, footer {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 20px; /* Padding for header and footer */
+  text-align: center; /* Center align text */
+  border: 1px solid #dee2e6; /* Optional border */
+}
+
+
+
 
 /* Slider Styles */
 .slider-container {
@@ -173,7 +194,7 @@
   grid-template-columns: repeat(4, 1fr); /* 4 columns max */
   gap: 10px; /* Even spacing between items */
   padding: 10px;
-  max-width: 140px; /* Ensures a consistent width for 4 columns with spacing */
+  max-width: 100%; /* Ensure it utilizes the full width */
 }
 
 .food-box {
@@ -182,13 +203,34 @@
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .food-btn {
   border: none;
   background-color: transparent;
 }
+
 .food-btn img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
+
+
+.active {
+  background-color: #007bff; /* Change to your desired active color */
+  color: white;
+}
+
+.proceed-container {
+  text-align: right; /* Align the button to the right */
+  margin-top: 20px; /* Add some space above */
+}
+
+.proceed-button{
+  border-radius: 8px;
+  background-color: #bbb;
+  height: 3rem;
+  width: 8rem;
+}
+
