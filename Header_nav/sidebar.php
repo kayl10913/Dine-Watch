@@ -40,6 +40,7 @@ include_once "assets/config.php";
     <a href="Admin-panel.php"><i class="fa fa-line-chart"></i> Dashboard</a>
     <a href="#orders" onclick="showOrders()"><i class="fa fa-cart-arrow-down"></i> Orders</a>
     <a href="#reservation" onclick="showReservation()"><i class="fa fa-calendar-check-o"></i> Reservations</a>
+    <a href="#category" onclick="showCategory()"><i class="fa fa-line-chart"></i> Category</a>
     <a href="#products" onclick="showProductItems()"><i class="fa fa-th-list"></i> Products</a>
     <a href="#tables" onclick="showTableViews()"><i class="fa fa-th"></i> Tables</a>
     <a href="#users" onclick="showUser()"><i class="fa fa-users"></i> Users</a>
