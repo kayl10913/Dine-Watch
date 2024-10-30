@@ -112,7 +112,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <img src="Images/map.png" alt="Map" class="img-fluid">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.557602531447!2d121.00298127234818!3d13.865573520679273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0d005b22b469%3A0x72b9eefa974b7abd!2sAntonina&#39;s%20Pizza%20%26%20Coffee!5e0!3m2!1sen!2sph!4v1730253771675!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
